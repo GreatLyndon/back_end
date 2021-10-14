@@ -1,0 +1,33 @@
+GET http://localhost:3000/users
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username": "Peter"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "Peter"
+}
+
+###
+DELETE http://localhost:3000/logout
+Content-Type: application/json
+
+###
+GET http://localhost:3000/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBldGVyIiwiaWF0IjoxNjM0MTQ1MzIyLCJleHAiOjE2MzQxNDUzNDJ9.KtX4yZ4g0M-0Qb2TbW__7d_WRFN0ELopW2fCGjH39-E
+
+###
+POST http://localhost:3000/refresh
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBldGVyIiwiaWF0IjoxNjM0MTQ1MjM4fQ.-LZldVvHTpMB4IciLHfZIisR2RoGmWRtLaQCs35xvQI"
+}
